@@ -275,3 +275,394 @@ header{
 
     outline:none;
 }
+/* ==========================
+   Capsules Section
+========================== */
+
+.capsules-container{
+    width:90%;
+    margin:60px auto;
+}
+
+.capsules-container h2{
+    margin-bottom:25px;
+}
+
+#capsuleList{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+/* ==========================
+   Capsule Card
+========================== */
+
+.capsule-card{
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:22px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    border:1px solid var(--border);
+}
+
+.capsule-card:hover{
+    transform:translateY(-6px);
+}
+
+.capsule-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.capsule-title{
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+.category-badge{
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:.75rem;
+    font-weight:600;
+
+    background:rgba(99,102,241,.15);
+    color:var(--primary);
+}
+
+.capsule-date{
+    color:var(--text-light);
+    font-size:.9rem;
+    margin-bottom:12px;
+}
+
+.capsule-preview{
+    color:var(--text-light);
+    line-height:1.6;
+    margin-bottom:18px;
+}
+
+/* ==========================
+   Countdown
+========================== */
+
+.countdown{
+    display:flex;
+    gap:10px;
+    margin:18px 0;
+    flex-wrap:wrap;
+}
+
+.time-box{
+    flex:1;
+    min-width:65px;
+
+    background:rgba(99,102,241,.1);
+
+    border-radius:12px;
+    text-align:center;
+    padding:10px;
+}
+
+.time-box h4{
+    color:var(--primary);
+    font-size:1rem;
+}
+
+.time-box span{
+    display:block;
+    font-size:.75rem;
+    color:var(--text-light);
+}
+
+/* ==========================
+   Card Actions
+========================== */
+
+.card-actions{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.btn{
+    flex:1;
+
+    border:none;
+    padding:12px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+    transition:var(--transition);
+
+    font-weight:600;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+.view-btn{
+    background:var(--primary);
+    color:white;
+}
+
+.delete-btn{
+    background:var(--danger);
+    color:white;
+}
+
+.unlock-btn{
+    background:var(--success);
+    color:white;
+}
+
+/* ==========================
+   Locked State
+========================== */
+
+.locked-label{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+
+    color:var(--warning);
+    font-weight:600;
+
+    margin-top:10px;
+}
+
+.unlocked-label{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+
+    color:var(--success);
+    font-weight:600;
+
+    margin-top:10px;
+}
+
+/* ==========================
+   Archive
+========================== */
+
+.archive-section{
+    width:90%;
+    margin:70px auto;
+}
+
+.archive-section h2{
+    margin-bottom:25px;
+}
+
+#archiveList{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+/* ==========================
+   Empty State
+========================== */
+
+.empty-state{
+    background:var(--card);
+    padding:40px;
+    border-radius:var(--radius);
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+}
+
+.empty-state i{
+    font-size:3rem;
+    margin-bottom:15px;
+    color:var(--primary);
+}
+
+.empty-state p{
+    color:var(--text-light);
+}
+
+/* ==========================
+   Modal
+========================== */
+
+.modal{
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+    display:none;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    z-index:9999;
+}
+
+.modal.show{
+    display:flex;
+}
+
+.modal-content{
+    background:var(--card);
+
+    width:100%;
+    max-width:700px;
+
+    padding:30px;
+    border-radius:20px;
+
+    position:relative;
+
+    animation:popup .3s ease;
+}
+
+.close-btn{
+    position:absolute;
+    right:20px;
+    top:15px;
+
+    font-size:1.8rem;
+    cursor:pointer;
+}
+
+#modalTitle{
+    margin-bottom:10px;
+}
+
+#modalCategory{
+    color:var(--primary);
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+#modalDate{
+    color:var(--text-light);
+    margin-bottom:20px;
+}
+
+#modalMessage{
+    line-height:1.8;
+    white-space:pre-wrap;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    margin-top:80px;
+
+    text-align:center;
+
+    padding:30px;
+
+    background:var(--card);
+
+    box-shadow:0 -5px 15px rgba(0,0,0,.05);
+}
+
+footer p{
+    color:var(--text-light);
+}
+
+/* ==========================
+   Animations
+========================== */
+
+@keyframes popup{
+    from{
+        opacity:0;
+        transform:scale(.85);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.fade-in{
+    animation:fadeIn .4s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:768px){
+
+    header{
+        padding:18px 5%;
+    }
+
+    .hero{
+        padding:60px 5%;
+    }
+
+    .hero h1{
+        font-size:2.1rem;
+    }
+
+    .capsule-form{
+        width:95%;
+        padding:22px;
+    }
+
+    .stats{
+        width:95%;
+    }
+
+    .capsules-container,
+    .archive-section{
+        width:95%;
+    }
+
+    .countdown{
+        justify-content:center;
+    }
+
+    .card-actions{
+        flex-direction:column;
+    }
+}
+
+@media(max-width:480px){
+
+    .hero h1{
+        font-size:1.8rem;
+    }
+
+    .time-box{
+        min-width:58px;
+    }
+
+    .modal-content{
+        padding:22px;
+    }
+}
