@@ -105,7 +105,80 @@ function saveCapsules() {
     );
 
 }
+let chart;
 
+function renderAnalytics() {
+
+    const goals =
+    capsules.filter(
+        c => c.category === "Goals"
+    ).length;
+
+    const memories =
+    capsules.filter(
+        c => c.category === "Memories"
+    ).length;
+
+    const dreams =
+    capsules.filter(
+        c => c.category === "Dreams"
+    ).length;
+
+    const career =
+    capsules.filter(
+        c => c.category === "Career"
+    ).length;
+
+    const personal =
+    capsules.filter(
+        c => c.category === "Personal"
+    ).length;
+
+    const ctx =
+    document
+    .getElementById("capsuleChart")
+    .getContext("2d");
+
+    if(chart){
+        chart.destroy();
+    }
+
+    chart = new Chart(ctx, {
+
+        type:"doughnut",
+
+        data:{
+            labels:[
+                "Goals",
+                "Memories",
+                "Dreams",
+                "Career",
+                "Personal"
+            ],
+
+            datasets:[{
+                data:[
+                    goals,
+                    memories,
+                    dreams,
+                    career,
+                    personal
+                ]
+            }]
+        },
+
+        options:{
+            responsive:true,
+            plugins:{
+                legend:{
+                    position:"bottom"
+                }
+            }
+        }
+
+    });
+
+}
 // ==========================
 // Statistics
 // ==========================
