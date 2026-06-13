@@ -1,4 +1,4 @@
-# ⏳ Time Capsule
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/560e48f6-58ae-4968-bee4-a58f60a3cd82" /># ⏳ Time Capsule
 
 > Write a message today. Unlock it in the future.
 
@@ -8,15 +8,19 @@ A modern web application that lets users send messages to their future selves, s
 
 ## 🚀 Live Demo
 
-Add your deployed GitHub Pages link here:
-
-https://yourusername.github.io/Time-Capsule
+https://time-capsule-rose-kappa.vercel.app/?
 
 ---
 
 ## 📸 Preview
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ca268c20-efa1-4d7b-b00b-1f5d64a06260" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f25185f4-f34a-40c6-980c-e5b62af8b63c" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/54f648af-d909-4255-a67e-2e2e11a8ca23" />
 
-<img width="100%" src="./assets/preview.png">
+
+
+
+
 
 ---
 
@@ -146,22 +150,6 @@ This project demonstrates:
 
 ---
 
-## 📷 Screenshots
-
-### Home Page
-
-<img src="./screenshots/home.png">
-
-### Archive
-
-<img src="./screenshots/archive.png">
-
-### Dark Mode
-
-<img src="./screenshots/darkmode.png">
-
----
-
 ## ⚙️ Installation
 
 Clone the repository:
@@ -214,11 +202,11 @@ If you like this project:
 
 ## 👨‍💻 Author
 
-Your Name
+BURUKALA MANI REETHIKA
 
-GitHub: https://github.com/yourusername
+GitHub:https://github.com/BurukalaManiReethika/Time-Capsule
 
-LinkedIn: https://linkedin.com/in/yourprofile
+LinkedIn: https://www.linkedin.com/in/BurukalaManiReethika
 
 ---
 
