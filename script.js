@@ -1,16 +1,8 @@
 
 
-const capsuleForm = document.getElementById("capsuleForm");
-const capsuleList = document.getElementById("capsuleList");
-const archiveList = document.getElementById("archiveList");
-const searchInput = document.getElementById("searchInput");
-
-const totalCapsules = document.getElementById("totalCapsules");
-const lockedCapsules = document.getElementById("lockedCapsules");
-const unlockedCapsules = document.getElementById("unlockedCapsules");
-
-const themeToggle = document.getElementById("themeToggle");
-
+const _capsuleList = document.getElementById("capsuleList");
+const _archiveList = document.getElementById("archiveList");
+const _searchInput = document.getElementById("searchInput");
 let capsules =
 JSON.parse(localStorage.getItem("capsules")) || [];
 
