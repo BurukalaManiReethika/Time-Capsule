@@ -1,7 +1,4 @@
-// ==========================
-// Time Capsule Elite
-// Part 1
-// ==========================
+
 
 const capsuleForm = document.getElementById("capsuleForm");
 const capsuleList = document.getElementById("capsuleList");
@@ -17,9 +14,6 @@ const themeToggle = document.getElementById("themeToggle");
 let capsules =
 JSON.parse(localStorage.getItem("capsules")) || [];
 
-// ==========================
-// Dark Mode
-// ==========================
 
 loadTheme();
 
@@ -45,9 +39,7 @@ function loadTheme() {
 
 }
 
-// ==========================
-// Create Capsule
-// ==========================
+
 
 capsuleForm.addEventListener("submit", (e) => {
 
@@ -179,9 +171,7 @@ function renderAnalytics() {
     });
 
 }
-// ==========================
-// Statistics
-// ==========================
+
 
 function updateStats() {
 
